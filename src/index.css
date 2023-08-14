@@ -1,13 +1,77 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Quicksand:wght@500;700&display=swap");
+* {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root{
+  --main-color: #5a3e2b;
+  --pink-color: #ffebb3;
+  --blue-color: #76c7ad;
 }
+
+body {
+  font-family: sans-serif;
+  color: #5a3e2b;
+  font-family: "Quicksand";
+}
+
+.logo{
+  background-color: #f4a226;
+  letter-spacing: -1px;
+  word-spacing: 30px;
+  font-size: 75px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: 'Monoton', cursive;
+}
+
+form{
+  background-color: #e5771f;
+  color: var(--main-color);
+}
+select,input{
+  background-color: var(--pink-color) !important;
+  border: none;
+  color: var(--main-color);
+  padding: 12px 35px;
+  cursor: pointer;
+}
+
+::placeholder{
+  font-weight: 700;
+  color: rgba(90, 62, 43,.4);
+  font-size: 18px;
+}
+
+button{
+  color: var(--main-color);
+  background-color: var(--blue-color);
+  padding: 8px 30px;
+}
+
+.packageList{
+  background-color: var(--main-color);
+  gap: 95px;
+  color: var(--pink-color);
+}
+
+.action select,
+.action button{
+  background-color: var(--pink-color);
+  color: var(--main-color);
+}
+
+.stats{
+  background-color: var(--blue-color);
+  color: var(--main-color);
+}
+
+input[type="checkbox"]{
+  height: 17px;
+  width: 17px;
+  margin-bottom: 5px;
+}
+input[type="checkbox"]:checked{
+  accent-color: #e5771f;
+}
+
